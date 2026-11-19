@@ -36,6 +36,7 @@ export default function Gallery() {
                 width={750}
                 height={500}
                 priority={i === 0}
+                data-testid={i === 0 ? "main-photo" : undefined}
                 className="h-full w-full object-cover"
               />
             </div>
