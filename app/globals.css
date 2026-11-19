@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Height tokens from PLAN.md. 7 rows x 4 columns = 384px (26 sizes).
+   Below 300px the grid goes to 3 columns / 9 rows = 496px. */
+:root {
+  --grid-h: 384px;
+}
+@media (max-width: 299px) {
+  :root {
+    --grid-h: 496px;
+  }
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  background: #fff;
+  color: #111;
+  margin: 0;
+}
+
+/* Size section: 8 top + 44 heading + grid + 12 gap + 24 status + 28 legend + 20 bottom = 520px at 4 columns */
+.sizes-section {
+  height: calc(8px + 44px + var(--grid-h) + 12px + 24px + 28px + 20px);
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+.shimmer {
+  background: linear-gradient(110deg, #f0f0f0 30%, #f8f8f8 50%, #f0f0f0 70%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .shimmer {
+    animation: none;
+  }
+}
