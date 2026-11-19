@@ -73,6 +73,7 @@ export default function SizeSelector({ sizes }: { sizes: SizeItem[] }) {
         <div
           ref={gridRef}
           role="radiogroup"
+          data-testid="size-grid"
           aria-labelledby="size-heading"
           onKeyDown={onKeyDown}
           className="grid h-full grid-cols-4 gap-2 [grid-auto-rows:48px] max-[299px]:grid-cols-3"
