@@ -30,6 +30,7 @@ export default function SizeButton({ size, selected, tabStop, onSelect }: Props)
       aria-checked={selected}
       aria-disabled={soldOut || undefined}
       aria-label={sizeAriaLabel(size)}
+      data-testid={soldOut ? "size-button-sold-out" : "size-button"}
       data-sku={size.sku}
       data-state={size.state}
       tabIndex={tabStop && !soldOut ? 0 : -1}
