@@ -146,7 +146,8 @@ Breakdown: 8 top pad + 44 heading + 384 grid + 12 gap + 24 status line + 28 lege
 - `page.tsx` reads `data/stock.json` on the server, then sorts by `display_order`. All 26 sizes are kept.
 - Map `stock_status` → state: `in_stock`, `low_stock`, `sold_out`. Treat `in_stock === false`, `stock_quantity === 0` or `stock_status === "sold_out"` as sold out regardless of the other fields (defensive).
 - Validate each row (required fields, numeric quantity). Invalid rows render as sold-out slots instead of breaking the grid, and log a server warning.
-- Counts from the current file: 17 in stock, 5 low stock (M 4, 9, 9.5, 11, 15), 4 sold out (M 3.5, 10, 15.5, 16), 1,525 units total.
+- Counts from the original list: 17 in stock, 5 low stock (M 4, 9, 9.5, 11, 15), 4 sold out (M 3.5, 10, 15.5, 16), 1,525 units total.
+- **Update (stock snapshot, 8 December 2026):** `data/stock.json` is now the snapshot file: 10 in stock, 7 low stock (M 3.5, 4, 5, 8.5, 13, 13.5, 14.5), 9 sold out (M 4.5, 6, 9, 10, 11.5, 14, 15, 15.5, 16), 815 units total. The design and layout are unchanged.
 
 ### Data concerns to confirm before launch
 1. **M 9, M 9.5, M 10** are low or sold out while M 8.5 (198) and M 10.5 (212) are the highest in stock. This may be a data error.

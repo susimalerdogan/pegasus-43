@@ -1,7 +1,7 @@
 # Nike Pegasus 43 Product Page
 
 Mobile-first product page built with **Next.js (App Router), React, TypeScript and Tailwind CSS**, following [PLAN.md](PLAN.md).
-Sizes and stock come from `data/stock.json` (the Pegasus 43 size and stock list), not from hardcoded inventory.
+Sizes and stock come from `data/stock.json` (the **Pegasus Size and Stock Snapshot, 8 December 2026**: 10 in stock, 7 low stock, 9 sold out), not from hardcoded inventory. The earlier list is kept in the repository root as `Pegasus 43 size and stock list.json`.
 
 ## Setup
 
@@ -56,4 +56,4 @@ To test the error state, temporarily rename `data/stock.json`, reload, then rena
 - Product photos: replace the SVGs in `public/images/` and update `components/Gallery.tsx`.
 - Technical details and reviews: no content was provided, so nothing is invented.
 - "Size Guide" links to `#size-guide` (no guide page yet).
-- Stock data to double check: M 9, M 9.5 and M 10 are low or sold out while neighbouring sizes are well stocked; `launch_date` (2026-12-10) is not used.
+- `launch_date` (2026-12-10) in the stock data is not used by the page.
