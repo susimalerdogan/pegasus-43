@@ -66,3 +66,9 @@ What is in place for the trace: the `data-testid` selectors (`main-photo`, `pric
 
 - New source of truth: `Pegasus Size and Stock Snapshot, 8 December 2026.json`, installed as `data/stock.json`. It has 26 sizes: **10 in stock, 7 low stock (M 3.5, 4, 5, 8.5, 13, 13.5, 14.5) and 9 sold out (M 4.5, 6, 9, 10, 11.5, 14, 15, 15.5, 16)**, 815 units in total.
 - No code or design changes were needed: all 26 buttons stay visible, sold-out buttons stay disabled, low-stock buttons keep the amber dot.
+
+## Stage 4: live deployment and measured results
+
+- Deployed to Vercel (Hobby) from the GitHub repository: https://pegasus-43.vercel.app
+- The Stage 3 trace prompt above still could not be run through Chrome DevTools MCP (not available). Instead, mobile Lighthouse (command line, 8 runs) and a Chrome DevTools-protocol script (`docs/testing/measure-grid-shift.mjs`) were run on the live URL with the same conditions (375 x 812, DPR 3, 150 ms RTT, 1638.4 Kbps, 4x CPU). Results and limitations: `docs/testing/TESTING_NOTES.md`.
+- Result: median Lighthouse performance 97.5 (7 of 8 runs at 90 or above, one run at 72), grid movement 0 px, CLS 0, smallest button 79.75 x 48 px.

@@ -1,0 +1,126 @@
+{
+  "url": "https://pegasus-43.vercel.app",
+  "conditions": "375x812, DPR 3, mobile emulation, 150ms RTT, 1638.4 Kbps, 4x CPU slowdown, cache disabled (puppeteer-core + Chrome CDP)",
+  "loadEventMs": 1218,
+  "paints": [
+    [
+      "first-paint",
+      680
+    ],
+    [
+      "first-contentful-paint",
+      680
+    ]
+  ],
+  "firstPaintMs": 680,
+  "gridSamplesBeforeFirstPaint": {
+    "count": 3,
+    "distinctTop": [
+      458
+    ],
+    "distinctHeight": [
+      384
+    ]
+  },
+  "gridTopFirstSampleAfterFirstPaint": {
+    "t": 687,
+    "top": 458,
+    "h": 384,
+    "real": false
+  },
+  "skeletonToRealSwapAtMs": 960,
+  "firstVisibleGridBoxSampleMs": 687,
+  "samplesWithSkeleton": 16,
+  "samplesWithRealGrid": 253,
+  "gridTopDistinctValues": [
+    458
+  ],
+  "gridHeightDistinctValues": [
+    384
+  ],
+  "gridTopMovementPx": 0,
+  "sampleCount": 269,
+  "totalCLS": 0,
+  "layoutShiftEntries": [],
+  "gridRelatedShiftEntries": [],
+  "buttonCount": 26,
+  "minButtonWidth": 79.75,
+  "minButtonHeight": 48,
+  "soldOutButtons": [
+    {
+      "sku": "HV7521-001-045",
+      "w": 79.75,
+      "h": 48,
+      "disabled": true,
+      "testid": "size-button-sold-out"
+    },
+    {
+      "sku": "HV7521-001-060",
+      "w": 79.75,
+      "h": 48,
+      "disabled": true,
+      "testid": "size-button-sold-out"
+    },
+    {
+      "sku": "HV7521-001-090",
+      "w": 79.75,
+      "h": 48,
+      "disabled": true,
+      "testid": "size-button-sold-out"
+    },
+    {
+      "sku": "HV7521-001-100",
+      "w": 79.75,
+      "h": 48,
+      "disabled": true,
+      "testid": "size-button-sold-out"
+    },
+    {
+      "sku": "HV7521-001-115",
+      "w": 79.75,
+      "h": 48,
+      "disabled": true,
+      "testid": "size-button-sold-out"
+    },
+    {
+      "sku": "HV7521-001-140",
+      "w": 79.75,
+      "h": 48,
+      "disabled": true,
+      "testid": "size-button-sold-out"
+    },
+    {
+      "sku": "HV7521-001-150",
+      "w": 79.75,
+      "h": 48,
+      "disabled": true,
+      "testid": "size-button-sold-out"
+    },
+    {
+      "sku": "HV7521-001-155",
+      "w": 79.75,
+      "h": 48,
+      "disabled": true,
+      "testid": "size-button-sold-out"
+    },
+    {
+      "sku": "HV7521-001-160",
+      "w": 79.75,
+      "h": 48,
+      "disabled": true,
+      "testid": "size-button-sold-out"
+    }
+  ],
+  "stateCounts": {
+    "low_stock": 7,
+    "sold_out": 9,
+    "in_stock": 10
+  },
+  "snapshotCheck": {
+    "snapshotRows": 26,
+    "buttons": 26,
+    "mismatches": []
+  },
+  "selectedAfterClick": "M 6.5W 8 · EU 39",
+  "statusLine": "M 6.5 selected."
+}

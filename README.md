@@ -1,3 +1,5 @@
+https://pegasus-43.vercel.app
+
 # Nike Pegasus 43 Product Page
 
 Mobile-first product page built with **Next.js (App Router), React, TypeScript and Tailwind CSS**, following [PLAN.md](PLAN.md).
@@ -57,3 +59,8 @@ To test the error state, temporarily rename `data/stock.json`, reload, then rena
 - Technical details and reviews: no content was provided, so nothing is invented.
 - "Size Guide" links to `#size-guide` (no guide page yet).
 - `launch_date` (2026-12-10) in the stock data is not used by the page.
+
+## Live site and test results
+
+- Live site (Vercel, Hobby plan): https://pegasus-43.vercel.app
+- Test results, Lighthouse reports and the mobile screenshot are in [`docs/testing/`](docs/testing/TESTING_NOTES.md). Summary on the live URL (mobile, Slow 4G, 4x CPU): Lighthouse performance median **97.5** over 8 runs (7 of 8 runs at 90 or above; one outlier run scored 72); size-grid movement **0 px** and CLS **0**; 26 buttons matching the 8 December 2026 snapshot (10 in stock, 7 low stock, 9 sold out), all at least 79.75 x 48 px. Limitations are listed in the notes.
